@@ -1,0 +1,104 @@
+@use  '../custom' as *;
+@use  '../ui/mixins';
+
+#cerrar_reconfiguracion-md-down {
+    margin-left: 80%;
+    margin-bottom: 0;
+}
+
+.container__servicio--reconfiguracion-md-down {
+
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
+}
+
+.container__servicio--reconfiguracion-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--reconfiguracion-md-down-s{
+
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+}
+
+.container__servicio--mobiliario-rec-md-down {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/rec_11.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+}
+
+.container__servicio--mobiliario-rec-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--rec_int-md-down {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+    
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+}
+
+.container__servicio--rec_int-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--mobiliario-rec-s {
+
+    @include mixins.breackpoints_higth--servicios;
+
+    @include mixins.imagenes_menu-servicios-servicio('', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $mt:false);
+}
+
+.container__servicio--mobiliario-rec-s-s {
+
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_1.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true );
+}
+
+.container__servicio--mobiliario-recInt-s {
+
+    @include mixins.breackpoints_higth--servicios;
+
+    @include mixins.imagenes_menu-servicios-servicio('', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $mt:false);
+}
+
+.container__servicio--mobiliario-recInt-s-s {
+
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_1.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true );
+}
+
+.img__mobiliario--mobiliario-recInt {
+
+    @include media-breakpoint-up(md) {
+        margin-top: 30%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 25%;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        margin-top: 40%;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-top: 25%;
+    }
+
+    width: 200%;
+
+}

@@ -1,0 +1,26 @@
+@use  '../custom' as *;
+
+.container__servicio--titulo-md h2{
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 5rem;
+        font-size: 3rem;
+    }
+
+    color: white;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.container__servicio--texto-md {
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        font-size: 1.6rem;
+    }
+
+    margin-top: 1.7rem;
+    color: white;
+    font-size: 1.4rem;
+}

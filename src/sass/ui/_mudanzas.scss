@@ -1,0 +1,138 @@
+@use  '../custom' as *;
+@use  '../ui/mixins';
+
+#cerrar_mudanzas-md-down {
+    margin-left: 80%;
+    margin-bottom: 0;
+}
+
+.container__servicio--mudanzas-md-down {
+    
+    
+    @include media-breakpoint-up(sm) {
+        height: 20em;
+    }
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/cajas_7.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+} 
+
+.container__servicio--mudanzas-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--mudanzas-md-down-s {
+
+    margin-top: 3rem;
+    
+    @include media-breakpoint-up(sm) {
+        height: 20em;
+    }
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/cajas_7.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+} 
+
+.container__servicio--mudanzas-md-down-s:hover {
+    opacity: 75%;
+}
+
+.container__servicio--mobiliario-md-down {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/emp_7.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+}
+
+.container__servicio--mobiliario-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--computadoras-md-down {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/emp_22.webp', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0, $mt:false)
+}
+
+.container__servicio--computadoras-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--mobiliario-s {
+
+    @include mixins.breackpoints_higth--servicios;
+
+    @include mixins.imagenes_menu-servicios-servicio('$url', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $mt:false);
+}
+
+.container__servicio--mobiliario-s-s {
+
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_7.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true );
+}
+
+.container__servicio--computadoras-s {
+
+    @include mixins.breackpoints_higth--servicios;
+
+    @include mixins.imagenes_menu-servicios-servicio('', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $mt:false);
+}
+
+.container__servicio--computadoras-s-s {
+
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_1.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true );
+}
+
+.img__mobiliario--mobiliario {
+
+    @include media-breakpoint-up(md) {
+        margin-top: 30%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 25%;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        margin-top: 40%;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-top: 25%;
+    }
+
+    width: 200%;
+
+}
+
+.img__computadoras--computadoras {
+
+    @include media-breakpoint-up(md) {
+        margin-top: 30%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 25%;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        margin-top: 40%;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-top: 25%;
+    }
+
+    width: 200%;
+
+}

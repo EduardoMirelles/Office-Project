@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/Icono_Office-Project.jpg">
+    <title>Office Project</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+
+<body style=" padding-top: 120px;">
+
+<header>
+  <section class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img loading="lazy" class="ms-3 me-3 my-3" src="/build/img/Icono_Office-Project.webp" alt="Logo DL-Inmobiliaria" width="80">
+        </a>
+        <a class="navbar-brand d-none d-sm-block ms-auto me-auto text-white" href="index.html"><h2>Office Project</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-auto me-auto">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item  ms-auto me-auto">
+              <a class="nav-link " href="comprar.html">Nosotros</a>
+            </li>
+            <li class="nav-item  ms-auto me-auto">
+              <a class="nav-link" href="rentar.html">Clientes</a>
+            </li>
+            <li class="nav-item  ms-auto me-auto">
+              <a class="nav-link"  href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item  ms-auto me-auto">
+              <a class="nav-link"  href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+</header>
+
+      <section class="servicios">
+          <div class="container-fluid">
+              <div class="row">
+                
+                <div id="instalacion" class="container__servicio--instalacion select_instalacion">
+                  <button id="cerrar_instalacion" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                    </svg>
+                  </button>   
+                  <div class="container__servicio--titulo select_instalacion">
+                    <h2 class="select_instalacion">Mobiliario</h2>
+                    <h3 class="select_instalacion">Mobiliario</h3>
+                     <p class="container__servicio--texto select_instalacion">Armado y desarmado de muebles de oficina</p>
+                  </div>
+                  </div>
+
+                  <div id="armado" class="container__servicio--armado select_armado ocultar">
+                    <button id="cerrar_armado" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg>
+                    </button>   
+                    <div class="container__servicio--titulo select-armado">
+                      <h2 class="select_armado">Armado de Mobiliario</h2>
+                      <h3 class="select_armado">Armado de Mobiliario</h3>
+                    </div>
+                  </div>
+
+                  <div id="armado__servicio" class="container__servicio--armado-s select-amrmado-select ocultar">
+                    <div class="container-fluid">
+                      <div class="row">
+
+                        <div class="col-8">
+                          <div class="container-fluid">
+                            <div class="row">
+
+                              <div class="col-12">
+                                <h2 class="servicio__select--titulo">Armado de Mobiliario</h2>
+                                <p class="servicio__select--texto">Profesionales con más de 12 años de experiencia en el sector.</p>
+                              </div>
+
+                              <div class="col-12">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-4">
+                                      <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Galeria</a>
+                                    </div>
+                                    <div class="col-4">
+                                      <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Nosotros</a>
+                                    </div>
+                                    <div class="col-4">
+                                      <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Contacto</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-4">
+                          <img class="img__mudanza--mobiliario img-fluid" src="/src/img/mudanza_1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="desarmado" class="container__servicio--desarmado select-desarmado ocultar">
+                    <button id="cerrar_desarmado" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg>
+                    </button> 
+                    <div class="container__servicio--titulo select-desarmado">
+                      <h2 class=" select-desarmado">Desarmado de Mobiliario</h2>
+                      <h3 class=" select-desarmado">Desarmado de Mobiliario</h3>
+                    </div>
+                  </div>
+
+                  <div id="desarmado__servicio" class="container__servicio--desarmado-s select-desarmado-select ocultar">
+                    <div class="container-fluid">
+                      <div class="row">
+
+                        <div class="col-8">
+                          <div class="container-fluid">
+                            <div class="row">
+
+                              <div class="col-12">
+                                <h2 class="servicio__select--titulo">Desrmado de Mobiliario</h2>
+                                <p class="servicio__select--texto">Profesionales con más de 12 años de experiencia en el sector.</p>
+                              </div>
+
+                              <div class="col-12">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-4">
+                                      <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Galeria</a>
+                                    </div>
+                                    <div class="col-4">
+                                      <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Nosotros</a>
+                                    </div>
+                                    <div class="col-4">
+                                      <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Contacto</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-4">
+                          <img class="img__desarmado--mobiliario img-fluid" src="/build/img/SVG/movimiento_1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                <div id="mudanzas" class="container__servicio--mudanzas select_mudanzas">
+                  <button id="cerrar_mudanzas" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                    </svg>
+                  </button> 
+                  <div class="container__servicio--titulo select_mudanzas">
+                    <h2 class="select_mudanzas">Mudanzas</h2>
+                    <h3 class="select_mudanzas">Mudanzas</h3>
+                    <p class="container__servicio--texto select_mudanzas">Mobiliario de oficina y equipo de computo</p>
+                  </div>
+                </div>
+               
+               <div id="mobiliario" class="container__servicio--mobiliario select-mobiliario ocultar">
+                <button id="cerrar_mobiliario" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                  </svg>
+                </button> 
+                <div class="container__servicio--titulo select-mobiliario">
+                  <h2 class="select_mobiliario select-mobiliario">Mobiliario</h2>
+                  <h3 class="select_mobiliario select-mobiliario">Mobiliario</h3>
+                </div>
+              </div>
+
+              <div id="mobiliario__servicio" class="container__servicio--mobiliario-s select-mobiliario-select ocultar">
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-8">
+                      <div class="container-fluid">
+                        <div class="row">
+
+                          <div class="col-12">
+                            <h2 class="servicio__select--titulo">Mudanza de mobiliario</h2>
+                            <p class="servicio__select--texto">Profesionales con más de 12 años de experiencia en el sector.</p>
+                          </div>
+
+                          <div class="col-12">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Galeria</a>
+                                </div>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Nosotros</a>
+                                </div>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Contacto</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-4">
+                      <img class="img__mobiliario--mobiliario img-fluid" src="/build/img/SVG/mudanza_4.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="computadoras" class="container__servicio--computadoras select-computadoras ocultar">
+                <button id="cerrar_computadoras" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                  </svg>
+                </button> 
+                <div class="container__servicio--titulo select-computadoras">
+                  <h2 class="select-computadoras">Equipo de computo</h2>
+                  <h3 class="select-computadoras">Equipo de computo</h3>
+                </div>
+              </div>
+
+              <div id="computadoras_servicio" class="container__servicio--computadoras-s select-computadoras ocultar">
+                <div class="container__servicio--titulo select-computadoras">
+                  <h2 class="select_computadoras select-computadoras">Mobiliario</h2>
+                  <h3 class="select_mobiliario select-mobiliario">Mobiliario</h3>
+                </div>
+              </div>
+
+              <div id="computadoras__servicio" class="container__servicio--computadoras-s select-computadoras-select ocultar">
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-8">
+                      <div class="container-fluid">
+                        <div class="row">
+
+                          <div class="col-12">
+                            <h2 class="servicio__select--titulo select-computadoras">Mudanza de computadoras</h2>
+                            <p class="servicio__select--texto select-computadoras">Profesionales con más de 12 años de experiencia en el sector.</p>
+                          </div>
+
+                          <div class="col-12">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Galeria</a>
+                                </div>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Nosotros</a>
+                                </div>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Contacto</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-4">
+                      <img class="img__computadoras--computadoras img-fluid" src="/build/img/SVG/mudanza_5.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+             <div id="reconfiguracion" class="container__servicio--reconfiguracion">
+              <button id="cerrar_rec" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                  </svg>
+              </button>
+                <div class="container__servicio--titulo  select-reconfiguracion">
+                 <h2 class=" select-reconfiguracion">Reconfiguración</h2>
+                 <h3 class=" select-reconfiguracion">Reconfiguración</h3>
+                 <p class="container__servicio--texto  select-reconfiguracion">Reconfiguracion de espacios y modificación de mobiliario</p>
+              </div>
+            </div>
+
+            <div id="mobiliario-rec" class="container__servicio--mobiliario-rec select-mobiliario-rec ocultar">
+              <button id="cerrar_mobiliarioRec" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+              </button>   
+              <div class="container__servicio--titulo select-mobiliario-rec">
+                <h2 class="select-mobiliario-rec">Mobiliario</h2>
+                <h3 class="select-mobiliario-rec">Mobiliario</h3>
+              </div>
+            </div>
+
+            
+            <div id="mobiliario__servicio-rec" class="container__servicio--mobiliario-rec-s select-mobiliario-rec-select ocultar">
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-8">
+                    <div class="container-fluid">
+                      <div class="row">
+
+                        <div class="col-12">
+                          <h2 class="servicio__select--titulo text-center">Reconfiguración de mobiliario</h2>
+                          <p class="servicio__select--texto">Profesionales con más de 12 años de experiencia en el sector.</p>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-4">
+                                <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Galeria</a>
+                              </div>
+                              <div class="col-4">
+                                <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Nosotros</a>
+                              </div>
+                              <div class="col-4">
+                                <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Contacto</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <img class="img__mobiliario--mobiliario-rec img-fluid" src="/build/img/SVG/movimiento_1.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="rec_int" class="container__servicio--rec_int select-rec_int ocultar">
+              <button id="cerrar_recInt" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+              </button> 
+              <div class="container__servicio--titulo select-rec_int">
+                <h2 class="select_rec_int">Modificación y Reparación</h2>
+                <h3 class="select_rec_int">Modificación y Reparación</h3>
+              </div>
+            </div>
+          </div>
+      </section>
+
+                  <div id="mobiliario__servicio-recInt" class="container__servicio--mobiliario-recInt-s select-mobiliario-recInt-select ocultar">
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-8">
+                    <div class="container-fluid">
+                      <div class="row">
+
+                        <div class="col-12">
+                          <h2 class="servicio__select--titulo text-center">Reconfiguración de mobiliario</h2>
+                          <p class="servicio__select--texto">Profesionales con más de 12 años de experiencia en el sector.</p>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-4">
+                                <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Galeria</a>
+                              </div>
+                              <div class="col-4">
+                                <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Nosotros</a>
+                              </div>
+                              <div class="col-4">
+                                <a href="#" class="btn btn-outline-info rounded-pill opciones__servicio--btn" >Contacto</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <img class="img__mobiliario--mobiliario-recInt img-fluid" src="/build/img/SVG/movimiento_1.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <section class="servicios_md-down">
+        <div class="container-xl ms-auto me-auto">
+          <div class="row">
+
+            <div id="instalacion-md-down" class="container__servicio--instalacion-md-down select_instalacion-md">
+              <div class="container__servicio--titulo-md select_instalacion-md">
+                <h2 class="select_instalacion-md">Mobiliario</h2>              
+                 <p class="container__servicio--texto-md select_instalacion-md">Armado y desarmado de muebles de oficina</p>
+              </div>
+              <button id="cerrar_instalacion-md-down" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+              </button>   
+              </div>
+  
+              <div id="armado-md-down" class="container__servicio--armado-md-down select-armado-md-down ocultar">
+                <div class="container__servicio--titulo-md select-armado-md-down">
+                  <h2 class="select_armado-md-down">Armado de Mobiliario</h2>
+                </div>
+              </div>
+
+              <div id="desarmado-md-down" class="container__servicio--desarmado-md-down select-desarmado ocultar">
+                <div class="container__servicio--titulo-md select-desarmado-md-down">
+                  <h2 class="select_desarmado-md-down">Desarmado de Mobiliario</h2>
+                </div>
+              </div>
+
+              
+          <div id="mudanzas-md-down" class="container__servicio--mudanzas-md-down select_mudanzas-md-down"> 
+            <div class="container__servicio--titulo-md select_mudanzas-md-down">
+              <h2 class="select_mudanzas-md-down">Mudanzas</h2>
+              <p class="container__servicio--texto-md select_mudanzas-md-down">Mobiliario de oficina y equipo de computo</p>
+            </div>
+            <button id="cerrar_mudanzas-md-down" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div id="mobiliario-md-down" class="container__servicio--mobiliario-md-down select-mobiliario-md ocultar">
+            <div class="container__servicio--titulo-md select-mobiliario-md">
+              <h2 class="select_mobiliario-md-down">Mobiliario</h2>
+            </div>
+          </div>
+
+          <div id="computadoras-md-down" class="container__servicio--computadoras-md-down select-computadoras-md ocultar">
+            <div class="container__servicio--titulo-md select-computadoras-md">
+              <h2 class="select_computadoras-md">Equipo de computo</h2>
+            </div>
+          </div>
+
+          <div id="reconfiguracion-md-down" class="container__servicio--reconfiguracion-md-down selec-reconfiguracion-md">
+              <div class="container__servicio--titulo-md  select-reconfiguracion-md">
+               <h2 class=" select-reconfiguracion-md">Reconfiguración</h2>
+               <p class="container__servicio--texto-md  select-reconfiguracion-md">Reconfiguracion de espacios y modificación de mobiliario</p>
+            </div>
+            <button id="cerrar_reconfiguracion-md-down" type="button" class="btn text-white mt-2 rounded-circle ocultar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </button>
+          </div>
+
+          <div id="mobiliario-rec-md-down" class="container__servicio--mobiliario-rec-md-down  select-mobiliario-rec-md ocultar">
+            <div class="container__servicio--titulo-md select-mobiliario-rec-md">
+              <h2 class="select_mobiliario-rec-md">Mobiliario</h2>
+            </div>
+          </div>
+
+          <div id="rec_int-md-down" class="container__servicio--rec_int-md-down select-rec_int-md ocultar">
+            <div class="container__servicio--titulo-md select-rec_int-md">
+              <h2 class="select_rec_int-md">Modificación y Reparación</h2>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="nuestro_servicio">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card border-0 bg-transparent">
+                <img class="card-img-top nuesto_servicio-img" src="/src/img/trabajador_1.svg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2 class="nuestro_servicio--titulo text-white text-center" >Personal</h2>
+                    <p class="nuestro_servicio--texto text-center">Personal uniformado y capacitado de acuerdo a las necesidades del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card border-0 bg-transparent">
+                <img class="card-img-top nuesto_servicio-img" src="/src/img/herramientas_1.svg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2 class="nuestro_servicio--titulo text-white text-center" >Herramienta</h2>
+                    <p class="nuestro_servicio--texto text-center">Herramienta en buen estado y la necesaria segun las necesidades del proyecto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-3 col-sm-6">
+              <div class="card border-0 bg-transparent">
+                <img class="card-img-top nuesto_servicio-img" src="/src/img/camion_2.svg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2 class="nuestro_servicio--titulo text-white text-center" >Camiones</h2>
+                    <p class="nuestro_servicio--texto text-center">Nuestras unidades se encuentran en buen estado, aseguradas y con equipo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card border-0 bg-transparent">
+                <img class="card-img-top nuesto_servicio-img" src="/src/img/caja_1.svg" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2 class="nuestro_servicio--titulo text-white text-center" >Empacamiento</h2>
+                    <p class="nuestro_servicio--texto text-center">Contamos con el equipo de embalaje para proteccion de mobiliario y/o equipo de computo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   <script src="/JS/menu-servicios.js" type="module"></script>
+</body>
+</html>

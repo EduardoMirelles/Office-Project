@@ -1,0 +1,79 @@
+@use  '../custom' as *;
+@use  '../ui/mixins';
+
+//Botones Flecha para regresar en el menu de servicios
+#cerrar_instalacion {
+    margin-left: 85%;
+}
+
+#cerrar_mudanzas {
+    margin-left: 85%;
+}
+
+#cerrar_rec {
+    margin-left: 85%;
+}
+
+#cerrar_armado {
+    margin-left: 85%;
+}
+
+#cerrar_desarmado {
+    margin-left: 85%;
+}
+
+#cerrar_mobiliario {
+    margin-left: 85%;
+}
+
+
+#cerrar_computadoras {
+    margin-left: 85%;
+}
+//Botones de opciones dentro der servicio
+.opciones__servicio--btn {
+
+    @include media-breakpoint-up(md) {
+
+        margin-top: 0.4rem;
+    
+        width: 6em;
+        height: 4em;
+    
+        color: $white;
+    
+        font-size: 0.7em;
+        
+    }
+
+    @include media-breakpoint-up(lg) {
+    
+        margin-top: 1rem;
+    
+        width: 6em;
+        height: 3em;
+    
+        color: $white;
+    
+        font-size: 1em;
+    }
+
+    @include media-breakpoint-up(xl) {
+
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+    
+        width: 8em;
+        height: 4em;
+    
+        color: $white;
+    
+        font-size: 1em;
+    }
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}

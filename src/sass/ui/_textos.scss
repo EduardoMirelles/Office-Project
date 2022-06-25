@@ -1,0 +1,104 @@
+@use  '../custom' as *;
+@use  '../ui/mixins';
+
+//Textos Menu Servicios
+.container__servicio--titulo {
+
+    @include media-breakpoint-up(md){
+        margin-top: 5em;
+    }
+
+    @include media-breakpoint-up(lg){
+        margin-top: 2em;
+    }
+
+    @include media-breakpoint-up(xxl){
+        margin-top: 4em;
+    }
+  
+    color: #fff;
+}
+
+.container__servicio--texto {
+
+
+
+    @include media-breakpoint-up(md){
+        margin-top: 1em;
+        font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(lg){
+        margin-top: 1em;
+        font-size: 1.4rem;
+    }
+
+    @include media-breakpoint-up(xl){
+        margin-top: 4em;
+        font-size: 1.4rem;
+    }
+
+    @include media-breakpoint-up(xxl){
+        font-size: 1.8rem;
+    }
+
+    margin-top: 6em;
+    color: #fff;
+}
+
+.container__servicio--titulo h2 {
+    
+    @include media-breakpoint-down(lg){
+        display: none;
+    }
+}
+
+.container__servicio--titulo h3 {
+    
+    @include media-breakpoint-up(lg){
+        display: none;
+    }
+}
+
+//Textos Servicio Seleccionado
+.servicio__select--titulo {
+
+    @include media-breakpoint-up(md) {
+        margin-top: 7%;
+
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 10%;
+        font-size: 2em;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 12%;
+        font-size: 3em;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-top: 20%;
+        font-size: 3em;
+    }
+
+    color: $white;
+}
+
+
+
+.servicio__select--texto {
+   
+    @include media-breakpoint-up(lg) {
+        margin-top: 1em;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 1.5em;
+        font-size: 1.3em;
+    }
+
+    color: $white;
+    text-align: center;
+}

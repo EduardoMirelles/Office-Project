@@ -1,0 +1,140 @@
+@use  '../custom' as *;
+@use  '../ui/mixins';
+
+
+body {
+    background-color: $primary;
+}
+
+.servicios {
+    
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+
+    margin-top: 10%;
+}
+
+
+
+.container__servicio--instalacion{
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios('../../../build/img/fotos_reales/mob_1.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true )
+
+}
+
+.container__servicio--instalacion:hover{
+    opacity: 75%;
+
+}
+
+
+.container__servicio--mudanzas {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios('../../../build/img/fotos_reales/cajas_7.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0,  $ml:false )
+
+}
+
+.container__servicio--mudanzas:hover{
+    opacity: 75%;
+}
+
+
+.container__servicio--mudanzas-s {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios('../../../build/img/fotos_reales/cajas_7.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true )
+}
+
+.container__servicio--mudanzas-s:hover{
+    opacity: 75%;
+}
+
+.container__servicio--reconfiguracion {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios('../../../build/img/fotos_reales/mob_23.webp', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $ml:false )
+
+}
+
+.container__servicio--reconfiguracion:hover{
+    opacity: 75%;
+}
+
+.container__servicio--reconfiguracion-s {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios('../../../build/img/fotos_reales/mob_23.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0, $ml:true )
+
+}
+
+.container__servicio--reconfiguracion-s:hover{
+    opacity: 75%;
+}
+
+.container__servicio--armado{
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/mob_23.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $ml:false )
+}
+
+.container__servicio--armado:hover{
+    opacity: 75%;
+}
+
+.container__servicio--desarmado{
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/benz_5.webp', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $ml:false )
+}
+
+.container__servicio--desarmado:hover{
+    opacity: 75%;
+}
+
+.container__servicio--mobiliario {
+
+    @include mixins.breackpoints_higth--servicios;  
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_7.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $ml:false )
+}
+
+.container__servicio--mobiliario:hover{
+    opacity: 75%;
+}
+
+.container__servicio--computadoras {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_22.webp', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $ml:false )
+}
+
+.container__servicio--computadoras:hover{
+    opacity: 75%;
+}
+
+.container__servicio--mobiliario-rec {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/rec_11.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $ml:false )
+}
+
+.container__servicio--mobiliario-rec:hover{
+    opacity: 75%;
+}
+
+.container__servicio--rec_int {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $ml:false )
+}
+
+.container__servicio--rec_int:hover{
+    opacity: 75%;
+}
+
+
+
+
+

@@ -1,0 +1,26 @@
+@use '../custom' as *;
+
+.navbar {
+
+
+    .nav-item {
+
+        @include media-breakpoint-down(lg){
+            padding: 5px 100px;
+        }
+
+        border-radius: 40px;
+        padding: 5px 20px;
+    }
+    
+    .nav-item:hover {
+         background: $success;
+         text-decoration-line: none;
+         cursor: pointer;
+    }
+
+    .titulo-op{
+        display: none;
+    }
+
+}
