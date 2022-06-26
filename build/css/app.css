@@ -11581,6 +11581,7 @@ body {
 }
 
 .servicios_md-down .container__servicio--instalacion-md-down {
+  margin-top: 15%;
   width: 100%;
   height: 18em;
   background-image: linear-gradient(to right top, rgba(5, 25, 55, 0.6), rgba(0, 77, 122, 0.6), rgba(0, 135, 147, 0.6), rgba(0, 191, 114, 0.6), rgba(168, 235, 18, 0.6)), url("../../../build/img/fotos_reales/mob_1.webp");
@@ -11606,6 +11607,31 @@ body {
 }
 .servicios_md-down .container__servicio--instalacion-md-down:hover {
   opacity: 75%;
+}
+.servicios_md-down .container__servicio--instalacion-md-down-s {
+  margin-top: 15%;
+  width: 100%;
+  height: 18em;
+  background-image: linear-gradient(to right top, rgba(5, 25, 55, 0.6), rgba(0, 77, 122, 0.6), rgba(0, 135, 147, 0.6), rgba(0, 191, 114, 0.6), rgba(168, 235, 18, 0.6)), url("../../../build/img/fotos_reales/mob_1.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-start-start-radius: 25px;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+  border-start-end-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  .servicios_md-down .container__servicio--instalacion-md-down-s {
+    height: 20em;
+  }
+}
+@media (min-width: 815px) {
+  .servicios_md-down .container__servicio--instalacion-md-down-s {
+    display: none;
+  }
 }
 .servicios_md-down .container__servicio--armado-md-down {
   width: 100%;
@@ -11637,8 +11663,8 @@ body {
   background-position: center center;
   background-size: cover;
   border-start-start-radius: 0;
-  border-end-start-radius: 0;
-  border-end-end-radius: 0;
+  border-end-start-radius: 25px;
+  border-end-end-radius: 25px;
   border-start-end-radius: 0;
   text-align: center;
   cursor: pointer;
@@ -12159,8 +12185,8 @@ body {
   background-position: center center;
   background-size: cover;
   border-start-start-radius: 0;
-  border-end-start-radius: 0;
-  border-end-end-radius: 0;
+  border-end-start-radius: 25px;
+  border-end-end-radius: 25px;
   border-start-end-radius: 0;
   text-align: center;
   cursor: pointer;

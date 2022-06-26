@@ -51,6 +51,7 @@ export const cerrarMobiliario = document.querySelector('#cerrar_mobiliario');
 export const cerrarComputadoras = document.querySelector('#cerrar_computadoras');
 
 export const cerrarMobiliarioRec = document.querySelector('#cerrar_mobiliarioRec');
+export const cerrarRecInt = document.querySelector('#cerrar_recInt');
 
 //!Cerrar opciones debajop de MD
 export const cerrarMD = document.querySelector('#cerrar_instalacion-md-down');

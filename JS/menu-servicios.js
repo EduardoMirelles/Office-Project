@@ -27,7 +27,8 @@ import { instalacion,
          mobiliarioRec,
          cerrarMobiliarioRec,
          RecIntS,
-         recInt
+         recInt,
+         cerrarRecInt
 
 } from '../JS/utils/selectores.js'
 
@@ -55,7 +56,8 @@ import {
     regresarDesarmado,
     regresarMobiliario,
     regresarComputadoras,
-    regresarMobiliarioRec 
+    regresarMobiliarioRec,
+    regresarRecInt
 
 } from '../JS/utils/funciones_retroceso_menu-serv.js'
 
@@ -101,7 +103,8 @@ function eventListeners() {
     cerrarMobiliario.addEventListener('click', regresarMobiliario);
     cerrarComputadoras.addEventListener('click', regresarComputadoras);
 
-    cerrarMobiliarioRec.addEventListener('click', regresarMobiliarioRec)
+    cerrarMobiliarioRec.addEventListener('click', regresarMobiliarioRec);
+    cerrarRecInt.addEventListener('click', regresarRecInt);
 }
 
 //Funciones
@@ -147,6 +150,8 @@ function desplegarMD(e) {
         if (insSelectMD) {
             mudanzasMD.classList.add('ocultar');
             reconfiguracionMD.classList.add('ocultar');
+            instalacionMD.classList.remove('container__servicio--instalacion-md-down');
+            instalacionMD.classList.add('container__servicio--instalacion-md-down-s');
             cerrarMD.classList.remove('ocultar');
             cerrarMD.classList.add('active');
             armadoMD.classList.remove('ocultar');
@@ -165,7 +170,7 @@ function desplegarMD(e) {
         if (insSelect2MD) {
             instalacionMD.classList.add('ocultar');
             reconfiguracionMD.classList.add('ocultar');
-            mudanzasMD.classList.remove('container__servicio--mudanzas-md-down')
+            mudanzasMD.classList.remove('container__servicio--mudanzas-md-down');
             mudanzasMD.classList.add('container__servicio--mudanzas-md-down-s');
             cerrarMudanzasMD.classList.remove('ocultar');
             cerrarMudanzasMD.classList.add('active');
@@ -241,7 +246,7 @@ function desplegarS(e) {
     }
 
     // ! Eventos al seleccionar sub-servicios de la seccion Reconfiguración
-    if (e.target.classList.contains('select-rec_int') || e.target.classList.contains('container__servicio--mobiliario-rec')) {
+    if (e.target.classList.contains('select-mobiliario-rec') || e.target.classList.contains('container__servicio--mobiliario-rec')) {
 
         if (true) {
             reconfiguraciónMobiliarioSeleccionado();
@@ -250,7 +255,7 @@ function desplegarS(e) {
         }
     }
 
-    if (e.target.classList.contains('select-computadoras') || e.target.classList.contains('container__servicio--rec_int')) {
+    if (e.target.classList.contains('select-rec_int') || e.target.classList.contains('container__servicio--rec_int')) {
 
         if (true) {
             reparacionSeleccionado();

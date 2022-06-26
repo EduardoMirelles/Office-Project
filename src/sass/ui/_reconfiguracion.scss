@@ -50,7 +50,7 @@
         display: none;
     }
     
-    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
 }
 
 .container__servicio--rec_int-md-down:hover {

@@ -31,7 +31,9 @@ import { instalacion,
     computadorasS,
     cerrarComputadoras,
     cerrarMobiliarioRec,
-    mobiliarioRecS
+    mobiliarioRecS,
+    cerrarRecInt,
+    RecIntS
 
 } from '../utils/selectores.js'
 
@@ -167,4 +169,15 @@ export function regresarMobiliarioRec() {
     mobiliarioRec.classList.remove('ocultar');
     mobiliarioRec.classList.add('container__servicio--mobiliario-rec');
     mobiliarioRec.classList.remove('container__servicio--mobiliario-rec-s-s');
+}
+
+export function regresarRecInt() {
+    RecIntS.classList.add('ocultar')
+    cerrarRecInt.classList.add('ocultar');
+    cerrarRecInt.classList.remove('active');
+    mobiliarioRec.classList.remove('ocultar');
+    reconfiguracion.classList.remove('ocultar');
+    recInt.classList.remove('ocultar');
+    recInt.classList.add('container__servicio--reconfiguracion');
+    recInt.classList.remove('container__servicio--mobiliario-recInt-s-s');
 }
