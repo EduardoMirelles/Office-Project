@@ -1,62 +1,53 @@
 @use  '../custom' as *;
 @use  '../ui/mixins';
 
-#cerrar_reconfiguracion-md-down {
-    margin-left: 80%;
-    margin-bottom: 0;
+//!Servicio de reconfiguración
+.container__servicio--reconfiguracion {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios('../../../build/img/fotos_reales/mob_23.webp', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $ml:false )
+
 }
 
-.container__servicio--reconfiguracion-md-down {
-
-
-    @include media-breakpoint-up(md) {
-        display: none;
-    }
-
-    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
-}
-
-.container__servicio--reconfiguracion-md-down:hover {
+.container__servicio--reconfiguracion:hover{
     opacity: 75%;
 }
 
-.container__servicio--reconfiguracion-md-down-s{
+//!Servicio de reconfiguración seleccionado
+.container__servicio--reconfiguracion-s {
 
-    margin-top: 3rem;
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios('../../../build/img/fotos_reales/mob_23.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0, $ml:true )
 
-    @include media-breakpoint-up(md) {
-        display: none;
-    }
-
-    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
 }
 
-.container__servicio--mobiliario-rec-md-down {
-
-    @include media-breakpoint-up(md) {
-        display: none;
-    }
-
-    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/rec_11.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
-}
-
-.container__servicio--mobiliario-rec-md-down:hover {
+.container__servicio--reconfiguracion-s:hover{
     opacity: 75%;
 }
 
-.container__servicio--rec_int-md-down {
+//!Servicio de regonfiguracion de mobiliario
+.container__servicio--mobiliario-rec {
 
-    @include media-breakpoint-up(md) {
-        display: none;
-    }
-    
-    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/rec_11.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $ml:false )
 }
 
-.container__servicio--rec_int-md-down:hover {
+.container__servicio--mobiliario-rec:hover{
     opacity: 75%;
 }
 
+//!Servicio de reparacion de mobiliario
+.container__servicio--rec_int {
+
+    @include mixins.breackpoints_higth--servicios;
+    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $ml:false )
+}
+
+.container__servicio--rec_int:hover{
+    opacity: 75%;
+}
+
+//!Sub-servicio de reconfiguración de mobiliario
 .container__servicio--mobiliario-rec-s {
 
     @include mixins.breackpoints_higth--servicios;
@@ -69,6 +60,7 @@
     @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_1.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true );
 }
 
+//!Sub-servicio de reparación de mobiliario
 .container__servicio--mobiliario-recInt-s {
 
     @include mixins.breackpoints_higth--servicios;
@@ -81,6 +73,7 @@
     @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_1.webp', $rounded1:40px, $rounded2:40px, $rounded3:0, $rounded4:0,  $ml:true );
 }
 
+//!Imagen SVG de la seccionn de información del servicio seleccionado
 .img__mobiliario--mobiliario-recInt {
 
     @include media-breakpoint-up(md) {
@@ -102,3 +95,5 @@
     width: 200%;
 
 }
+
+

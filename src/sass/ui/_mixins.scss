@@ -1,5 +1,6 @@
 @use  '../custom' as *;
 
+//!Ajusta la altura de la seecion de servicios
 @mixin breackpoints_higth--servicios {
 
     @include media-breakpoint-up(md){
@@ -19,6 +20,7 @@
     }
 }
 
+//!Agrega el fondo de imagen y de gradiente a las secciones de los servicios
 @mixin imagenes_menu-servicios($url, $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0,  $ml:true ) {
     width: 33%;
 
@@ -45,6 +47,7 @@
     }
 }
 
+//!Agrega el fondo de imagen y de gradiente a las secciones de los servicios seleccionados
 @mixin imagenes_menu-servicios-s($url, $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0,  $ml:true ) {
     width: 33%;
 
@@ -71,6 +74,7 @@
     }
 }
 
+//!Agrega el fondo de imagen y de gradiente a las secciones de los servicios debajo de MD
 @mixin imagenes_menu-servicios-md-down($url, $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false) {
 
     width: 100%;
@@ -98,6 +102,7 @@
     cursor: pointer;
 }
 
+//!Agrega el fondo de imagen y de gradiente a las secciones de los servicios debajo de MD seleccionados
 @mixin imagenes_menu-servicios-md-down-s($url, $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false) {
 
     width: 100%;
@@ -125,6 +130,7 @@
     cursor: pointer;
 }
 
+//!Crea el estilo para mostrar la informacion del servicio especifico seleccionado 
 @mixin imagenes_menu-servicios-servicio($url, $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false) {
 
     width: 66%;

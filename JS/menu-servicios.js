@@ -61,6 +61,12 @@ import {
 
 } from '../JS/utils/funciones_retroceso_menu-serv.js'
 
+import {
+    mobiliarioSeleccionadoMD, 
+    mudanzasSeleccionadoMD,
+    reconfiguracionSeleccionadoMD
+} from '../JS/utils/funciones_menu-sev-md.js'
+
 
 //Eventos
 eventListeners();
@@ -109,6 +115,7 @@ function eventListeners() {
 
 //Funciones
 
+//!Aplicacion de Dispositivos de Escritorio 
 //----------Retrae los otros sevicios y enfoca los sub servicios de la seleccion
 function desplegar(e){
 
@@ -139,72 +146,6 @@ function desplegar(e){
         }
     } 
 }
-
-
-//----------Retrae los otros sevicios y enfoca los sub servicios de la seleccion debajo de MD
-function desplegarMD(e) {
-    
-    if (e.target.classList.contains('select_instalacion-md')) {
-        let insSelectMD = true;
-
-        if (insSelectMD) {
-            mudanzasMD.classList.add('ocultar');
-            reconfiguracionMD.classList.add('ocultar');
-            instalacionMD.classList.remove('container__servicio--instalacion-md-down');
-            instalacionMD.classList.add('container__servicio--instalacion-md-down-s');
-            cerrarMD.classList.remove('ocultar');
-            cerrarMD.classList.add('active');
-            armadoMD.classList.remove('ocultar');
-            desarmadoMD.classList.remove('ocultar');
-            return;
-            
-        } else {
-            insSelectMD = false;
-            return;
-        }
-    } 
-
-    if (e.target.classList.contains('select_mudanzas-md-down') || e.target.classList.contains('container__servicio--mudanzas-md-down')) {
-        let insSelect2MD = true;
-
-        if (insSelect2MD) {
-            instalacionMD.classList.add('ocultar');
-            reconfiguracionMD.classList.add('ocultar');
-            mudanzasMD.classList.remove('container__servicio--mudanzas-md-down');
-            mudanzasMD.classList.add('container__servicio--mudanzas-md-down-s');
-            cerrarMudanzasMD.classList.remove('ocultar');
-            cerrarMudanzasMD.classList.add('active');
-            mobiliarioMD.classList.remove('ocultar');
-            computadorasMD.classList.remove('ocultar');
-            return;
-
-        } else {
-            insSelect2MD = false;
-            return;
-        }
-    }
-
-    if (e.target.classList.contains('select-reconfiguracion-md') || e.target.classList.contains('container__servicio--reconfiguracion-md')) {
-        let insSelect2MD = true;
-
-        if (insSelect2MD) {
-            instalacionMD.classList.add('ocultar');
-            mudanzasMD.classList.add('ocultar');
-            reconfiguracionMD.classList.remove('container__servicio--reconfiguracion-down-md-down');
-            reconfiguracionMD.classList.add('container__servicio--reconfiguracion-md-down-s');
-            cerrarReconfiguracionMD.classList.remove('ocultar');
-            cerrarReconfiguracionMD.classList.add('active');
-            mobiliarioRecMD.classList.remove('ocultar');
-            reparacionMD.classList.remove('ocultar');
-            return;
-
-        } else {
-            insSelect2MD = false;
-        }
-    } 
-
-}
-
 
 
 function desplegarS(e) {
@@ -264,5 +205,35 @@ function desplegarS(e) {
         }
     }
     
+}
+
+//!Aplicacion de Dispositivos moviles
+//----------Retrae los otros sevicios y enfoca los sub servicios de la seleccion debajo de MD
+function desplegarMD(e) {
+    
+    if (e.target.classList.contains('select_instalacion-md')) {
+
+        if (true) {
+            mobiliarioSeleccionadoMD();
+            return;         
+        }
+    } 
+
+    if (e.target.classList.contains('select_mudanzas-md-down') || e.target.classList.contains('container__servicio--mudanzas-md-down')) {
+
+        if (true) {
+            mudanzasSeleccionadoMD();
+            return;
+        } 
+    }
+
+    if (e.target.classList.contains('select-reconfiguracion-md') || e.target.classList.contains('container__servicio--reconfiguracion-md')) {
+
+        if (true) {
+            reconfiguracionSeleccionadoMD();
+            return;
+        } 
+    } 
+
 }
 

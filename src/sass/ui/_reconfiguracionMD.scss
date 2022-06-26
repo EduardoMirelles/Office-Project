@@ -1,0 +1,58 @@
+@use  '../custom' as *;
+@use  '../ui/mixins';
+
+#cerrar_reconfiguracion-md-down {
+    margin-left: 80%;
+    margin-bottom: 0;
+}
+
+.container__servicio--reconfiguracion-md-down {
+
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
+}
+
+.container__servicio--reconfiguracion-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--reconfiguracion-md-down-s{
+
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+}
+
+.container__servicio--mobiliario-rec-md-down {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/rec_11.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+}
+
+.container__servicio--mobiliario-rec-md-down:hover {
+    opacity: 75%;
+}
+
+.container__servicio--rec_int-md-down {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+    
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
+}
+
+.container__servicio--rec_int-md-down:hover {
+    opacity: 75%;
+}

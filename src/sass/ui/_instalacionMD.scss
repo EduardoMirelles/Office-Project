@@ -1,0 +1,77 @@
+@use  '../custom' as *;
+@use  '../ui/mixins';
+
+//!Servicios por debajo del tamaño mediano de pantalla
+#cerrar_instalacion-md-down {
+    margin-left: 80%;
+    margin-bottom: 0;
+}
+
+
+//Mobiliario
+    .container__servicio--instalacion-md-down {
+
+        margin-top: 15%;
+
+        @include media-breakpoint-up(sm) {
+            height: 20em;
+        }
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    
+        @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_1.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+
+    }
+
+    .container__servicio--instalacion-md-down:hover {
+        opacity: 75%;
+    }
+
+    .container__servicio--instalacion-md-down-s {
+
+        margin-top: 15%;
+
+        @include media-breakpoint-up(sm) {
+            height: 20em;
+        }
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    
+        @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_1.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+
+    }
+
+//Servicio de Armado de mobiliario
+    .container__servicio--armado-md-down {
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/mob_23.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+
+    }
+
+    .container__servicio--armado-md-down:hover {
+        opacity: 75%;
+    }
+
+//Servicio de Desarmado de mobiliario
+    .container__servicio--desarmado-md-down {
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/mob_23.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
+
+    }
+
+    .container__servicio--desarmado-md-down:hover {
+        opacity: 75%;
+    }
+   
