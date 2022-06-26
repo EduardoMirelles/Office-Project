@@ -38,6 +38,7 @@
 #cerrar_mobiliarioRec {
     margin-left: 85%;
 }
+
 //Botones de opciones dentro der servicio
 .opciones__servicio--btn {
 
@@ -84,4 +85,11 @@
     align-items: center;
     flex-wrap: nowrap;
 
+}
+
+.btn-servicioMD {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1.5rem;
 }

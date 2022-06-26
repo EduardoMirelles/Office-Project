@@ -11157,82 +11157,6 @@ body {
   }
 }
 
-.container__servicio--mobiliario {
-  width: 33%;
-  background-image: linear-gradient(0deg, rgba(0, 251, 255, 0.483) 0%, rgba(45, 121, 253, 0.477) 100%), url("../../../build/img/fotos_reales/emp_7.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-start-start-radius: 0;
-  border-end-start-radius: 0;
-  border-end-end-radius: 0;
-  border-start-end-radius: 0;
-  cursor: pointer;
-  margin-left: 0;
-}
-@media (min-width: 815px) {
-  .container__servicio--mobiliario {
-    height: 16rem;
-  }
-}
-@media (min-width: 992px) {
-  .container__servicio--mobiliario {
-    height: 18rem;
-  }
-}
-@media (min-width: 1200px) {
-  .container__servicio--mobiliario {
-    height: 25rem;
-  }
-}
-@media (min-width: 1400px) {
-  .container__servicio--mobiliario {
-    height: 30rem;
-  }
-}
-
-.container__servicio--mobiliario:hover {
-  opacity: 75%;
-}
-
-.container__servicio--computadoras {
-  width: 33%;
-  background-image: linear-gradient(0deg, rgba(0, 251, 255, 0.483) 0%, rgba(45, 121, 253, 0.477) 100%), url("../../../build/img/fotos_reales/emp_22.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-start-start-radius: 0;
-  border-end-start-radius: 0;
-  border-end-end-radius: 40px;
-  border-start-end-radius: 40px;
-  cursor: pointer;
-  margin-left: 0;
-}
-@media (min-width: 815px) {
-  .container__servicio--computadoras {
-    height: 16rem;
-  }
-}
-@media (min-width: 992px) {
-  .container__servicio--computadoras {
-    height: 18rem;
-  }
-}
-@media (min-width: 1200px) {
-  .container__servicio--computadoras {
-    height: 25rem;
-  }
-}
-@media (min-width: 1400px) {
-  .container__servicio--computadoras {
-    height: 30rem;
-  }
-}
-
-.container__servicio--computadoras:hover {
-  opacity: 75%;
-}
-
 .container__servicio--instalacion {
   width: 33%;
   background-image: linear-gradient(to right top, rgba(5, 25, 55, 0.6), rgba(0, 77, 122, 0.6), rgba(0, 135, 147, 0.6), rgba(0, 191, 114, 0.6), rgba(168, 235, 18, 0.6)), url("../../../build/img/fotos_reales/mob_1.webp");
@@ -11514,6 +11438,15 @@ body {
     font-size: 2.5rem;
     font-size: 1.6rem;
   }
+}
+
+.servicio__select--tituloMD {
+  margin-top: 2rem;
+}
+
+.servicio__select--textoMD {
+  margin-top: 1.7rem;
+  margin-bottom: 1.5rem;
 }
 
 .container__servicio--mudanzas {
@@ -12366,6 +12299,13 @@ body {
   }
 }
 
+.btn-servicioMD {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1.5rem;
+}
+
 #cerrar_mudanzas-md-down {
   margin-left: 80%;
   margin-bottom: 0;
@@ -12563,10 +12503,44 @@ body {
   opacity: 75%;
 }
 
-.container__servicio--desarmado-md-down {
+.container__servicio--armado-md-down-s {
+  margin-top: 15%;
   width: 100%;
   height: 18em;
   background-image: linear-gradient(0deg, rgba(0, 251, 255, 0.483) 0%, rgba(45, 121, 253, 0.477) 100%), url("../../../build/img/fotos_reales/mob_23.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-start-start-radius: 25px;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+  border-start-end-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 815px) {
+  .container__servicio--armado-md-down-s {
+    display: none;
+  }
+}
+
+.container_servicio--armadoMD-s {
+  width: 100%;
+  height: 46em;
+  background-image: linear-gradient(0deg, rgba(12, 0, 255, 0.5270483193) 0%, rgba(181, 45, 253, 0.6222864146) 100%), url("$url");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-start-start-radius: 0;
+  border-end-start-radius: 40px;
+  border-end-end-radius: 40px;
+  border-start-end-radius: 0;
+}
+
+.container__servicio--desarmado-md-down {
+  width: 100%;
+  height: 18em;
+  background-image: linear-gradient(0deg, rgba(0, 251, 255, 0.483) 0%, rgba(45, 121, 253, 0.477) 100%), url("../../../build/img/fotos_reales/benz_5.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -12585,6 +12559,40 @@ body {
 
 .container__servicio--desarmado-md-down:hover {
   opacity: 75%;
+}
+
+.container__servicio--desarmado-md-down-s {
+  margin-top: 15%;
+  width: 100%;
+  height: 18em;
+  background-image: linear-gradient(0deg, rgba(0, 251, 255, 0.483) 0%, rgba(45, 121, 253, 0.477) 100%), url("../../../build/img/fotos_reales/benz_5.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-start-start-radius: 25px;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+  border-start-end-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 815px) {
+  .container__servicio--desarmado-md-down-s {
+    display: none;
+  }
+}
+
+.container_servicio--desarmadoMD-s {
+  width: 100%;
+  height: 46em;
+  background-image: linear-gradient(0deg, rgba(12, 0, 255, 0.5270483193) 0%, rgba(181, 45, 253, 0.6222864146) 100%), url("$url");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-start-start-radius: 0;
+  border-end-start-radius: 40px;
+  border-end-end-radius: 40px;
+  border-start-end-radius: 0;
 }
 
 #cerrar_reconfiguracion-md-down {

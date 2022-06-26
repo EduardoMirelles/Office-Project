@@ -28,7 +28,10 @@ import { instalacion,
          cerrarMobiliarioRec,
          RecIntS,
          recInt,
-         cerrarRecInt
+         cerrarRecInt,
+         selectArmadoMD,
+         cerrararmadoMD,
+         cerrarDesarmadoMD
 
 } from '../JS/utils/selectores.js'
 
@@ -57,14 +60,18 @@ import {
     regresarMobiliario,
     regresarComputadoras,
     regresarMobiliarioRec,
-    regresarRecInt
+    regresarRecInt,
+    regresarArmadoMD,
+    regresarDesrmadoMD
 
 } from '../JS/utils/funciones_retroceso_menu-serv.js'
 
 import {
     mobiliarioSeleccionadoMD, 
     mudanzasSeleccionadoMD,
-    reconfiguracionSeleccionadoMD
+    reconfiguracionSeleccionadoMD,
+    armadoSeleccionadoMDS,
+    desarmadoSeleccionadoMDS
 } from '../JS/utils/funciones_menu-sev-md.js'
 
 
@@ -87,10 +94,18 @@ function eventListeners() {
     mudanzasMD.addEventListener('click', desplegarMD)
     reconfiguracionMD.addEventListener('click', desplegarMD);
 
+    //Eventos de despliegue de servicio espesifico debajo de MD
+    armadoMD.addEventListener('click', desplegarMDS);
+    desarmadoMD.addEventListener('click', desplegarMDS);
+
     //Eventos de regresar al estado inicial debajo de MD
     cerrarMD.addEventListener('click', regresarInstalacionMD);
     cerrarMudanzasMD.addEventListener('click', regresarMudanzasMD);
     cerrarReconfiguracionMD.addEventListener('click', regresarReconfiguracionMD);
+
+    //Eventos de regresar al estado inicial de servicio espesifico debajo de MD
+    cerrararmadoMD.addEventListener('click', regresarArmadoMD);
+    cerrarDesarmadoMD.addEventListener('click', regresarDesrmadoMD);
 
     //Eventos de despliegue de el servicio especifico seleccionado
     armado.addEventListener('click', desplegarS);
@@ -111,6 +126,7 @@ function eventListeners() {
 
     cerrarMobiliarioRec.addEventListener('click', regresarMobiliarioRec);
     cerrarRecInt.addEventListener('click', regresarRecInt);
+
 }
 
 //Funciones
@@ -235,5 +251,24 @@ function desplegarMD(e) {
         } 
     } 
 
+}
+
+function desplegarMDS(e) {
+
+    if (e.target.classList.contains('select-armado-md-down') || e.target.classList.contains('container__servicio--armado-md-down')) {
+
+        if (true) {
+            armadoSeleccionadoMDS();
+            return;         
+        }
+    }
+    
+    if (e.target.classList.contains('select-desarmado') || e.target.classList.contains('container__servicio--desarmado-md-down')) {
+
+        if (true) {
+            desarmadoSeleccionadoMDS();
+            return;         
+        }
+    }
 }
 

@@ -28,7 +28,11 @@ import { instalacion,
     cerrarMobiliarioRec,
     RecIntS,
     recInt,
-    cerrarRecInt
+    cerrarRecInt,
+    selectArmadoMD,
+    cerrararmadoMD,
+    selectDesarmadoMD,
+    cerrarDesarmadoMD
 
 } from '../utils/selectores.js'
 
@@ -56,6 +60,7 @@ export const mudanzasSeleccionadoMD = function() {
     computadorasMD.classList.remove('ocultar');
 }
 
+// ! Funcion que despliega las opciones del servicio de reconfiguración de mobiliario debajo de MD
 export const reconfiguracionSeleccionadoMD = function() {
     instalacionMD.classList.add('ocultar');
     mudanzasMD.classList.add('ocultar');
@@ -65,4 +70,24 @@ export const reconfiguracionSeleccionadoMD = function() {
     cerrarReconfiguracionMD.classList.add('active');
     mobiliarioRecMD.classList.remove('ocultar');
     reparacionMD.classList.remove('ocultar');
+}
+
+export const armadoSeleccionadoMDS = function() {
+
+    desarmadoMD.classList.add('ocultar');
+    instalacionMD.classList.add('ocultar');
+    armadoMD.classList.remove('container__servicio--armado-md-down');
+    armadoMD.classList.add('container__servicio--armado-md-down-s');
+    selectArmadoMD.classList.remove('ocultar');
+    cerrararmadoMD.classList.remove('ocultar');
+}
+
+export const desarmadoSeleccionadoMDS = function() {
+
+    instalacionMD.classList.add('ocultar');
+    armadoMD.classList.add('ocultar');
+    desarmadoMD.classList.remove('container__servicio--desarmado-md-down');
+    desarmadoMD.classList.add('container__servicio--desarmado-md-down-s');
+    selectDesarmadoMD.classList.remove('ocultar');
+    cerrarDesarmadoMD.classList.remove('ocultar');
 }

@@ -60,6 +60,21 @@
         opacity: 75%;
     }
 
+    .container__servicio--armado-md-down-s {
+        margin-top: 15%;
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/mob_23.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+
+    }
+
+    .container_servicio--armadoMD-s {
+
+        @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
+    }
+
 //Servicio de Desarmado de mobiliario
     .container__servicio--desarmado-md-down {
 
@@ -67,11 +82,25 @@
             display: none;
         }
 
-        @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/mob_23.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
+        @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/benz_5.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
 
     }
 
     .container__servicio--desarmado-md-down:hover {
         opacity: 75%;
     }
+
+    .container__servicio--desarmado-md-down-s {
+
+        margin-top: 15%;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/benz_5.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+    }
    
+    .container_servicio--desarmadoMD-s {
+        @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
+    } 

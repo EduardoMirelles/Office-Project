@@ -33,7 +33,11 @@ import { instalacion,
     cerrarMobiliarioRec,
     mobiliarioRecS,
     cerrarRecInt,
-    RecIntS
+    RecIntS,
+    selectArmadoMD,
+    cerrararmadoMD,
+    cerrarDesarmadoMD,
+    selectDesarmadoMD
 
 } from '../utils/selectores.js'
 
@@ -109,6 +113,27 @@ export function regresarReconfiguracionMD() {
     reparacionMD.classList.add('ocultar');
 }
 
+//!Regresar del la seccion de inofrmacion del sub servicio de armado 
+export function regresarArmadoMD(){
+    selectArmadoMD.classList.add('ocultar')
+    instalacionMD.classList.remove('ocultar');
+    armadoMD.classList.remove('container__servicio--armado-md-down-s');
+    armadoMD.classList.add('container__servicio--armado-md-down');
+    cerrararmadoMD.classList.add('ocultar');
+    cerrararmadoMD.classList.remove('active');
+    desarmadoMD.classList.remove('ocultar');
+}
+
+//!Regresar del la seccion de inofrmacion del sub servicio de desarmado 
+export function regresarDesrmadoMD(){
+    selectDesarmadoMD.classList.add('ocultar')
+    instalacionMD.classList.remove('ocultar');
+    desarmadoMD.classList.remove('container__servicio--desarmado-md-down-s');
+    desarmadoMD.classList.add('container__servicio--desarmado-md-down');
+    cerrarDesarmadoMD.classList.add('ocultar');
+    cerrarDesarmadoMD.classList.remove('active');
+    armadoMD.classList.remove('ocultar');
+}
 // ? Menu de Sub-ervicio especifico seleccionado
 //? Mobiliario
 //! Regresa de haber sellecionado "Armado" a los sub-servicios de "MOBILIARIO"

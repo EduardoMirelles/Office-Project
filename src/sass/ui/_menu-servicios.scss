@@ -20,25 +20,7 @@ body {
 
 
 
-.container__servicio--mobiliario {
 
-    @include mixins.breackpoints_higth--servicios;  
-    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_7.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $ml:false )
-}
-
-.container__servicio--mobiliario:hover{
-    opacity: 75%;
-}
-
-.container__servicio--computadoras {
-
-    @include mixins.breackpoints_higth--servicios;
-    @include mixins.imagenes_menu-servicios-s('../../../build/img/fotos_reales/emp_22.webp', $rounded1:0, $rounded2:0, $rounded3:40px, $rounded4:40px, $ml:false )
-}
-
-.container__servicio--computadoras:hover{
-    opacity: 75%;
-}
 
 
 

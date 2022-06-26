@@ -157,3 +157,23 @@
     cursor: pointer;
 }
 
+//!
+@mixin imagenes_menu-servicios-servicio-md-down($url, $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0) {
+    width: 100%;
+    height: 46em;
+
+    background: {
+        image:linear-gradient(0deg, rgba(12,0,255,0.5270483193277311) 0%, rgba(181,45,253,0.6222864145658263) 100%), url($url);
+        repeat: no-repeat;
+        position: center center ;
+        size: cover;
+    }
+
+    border: {
+        start-start-radius: $rounded1;
+        end-start-radius: $rounded2;
+        end-end-radius: $rounded3;
+        start-end-radius: $rounded4;
+    }
+}
+
