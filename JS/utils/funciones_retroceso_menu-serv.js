@@ -37,9 +37,18 @@ import { instalacion,
     selectArmadoMD,
     cerrararmadoMD,
     cerrarDesarmadoMD,
-    selectDesarmadoMD
+    selectDesarmadoMD,
+    selectMudanzaMobiliarioMD,
+    cerrarMudanzaMobiliarioMD,
+    cerrarMudanzaComputadorasMD,
+    selectMudanzaComputadorasMD,
+    cerrarRecMobiliarioMD,
+    selectMobiliarioRecMD,
+    cerrarReperacionMD,
+    selectReparacionMD
 
 } from '../utils/selectores.js'
+import { mudanzaMobiliarioSeleccionadoMDS } from './funciones_menu-sev-md.js';
 
 //TODO: Regresa la pagina a su estado inicial con lo servicios
 
@@ -113,6 +122,45 @@ export function regresarReconfiguracionMD() {
     reparacionMD.classList.add('ocultar');
 }
 
+export function regresarMudanzaMobiliarioMD() {
+    mudanzasMD.classList.remove('ocultar');
+    computadorasMD.classList.remove('ocultar');
+    mobiliarioMD.classList.remove('container__servicio--mobiliario-md-down-s');
+    mobiliarioMD.classList.add('container__servicio--mobiliario-md-down');
+    selectMudanzaMobiliarioMD.classList.add('ocultar');
+    cerrarMudanzaMobiliarioMD.classList.add('ocultar');
+}
+
+export function regresarMudanzaComputadorasMD() {
+    mudanzasMD.classList.remove('ocultar');
+    mobiliarioMD.classList.remove('ocultar');
+    computadorasMD.classList.remove('container__servicio--computadoras-md-down-s');
+    computadorasMD.classList.add('container__servicio--computadoras-md-down');
+    selectMudanzaComputadorasMD.classList.add('ocultar');
+    cerrarMudanzaComputadorasMD.classList.add('ocultar');
+}
+
+export function regresarReconfiguraciónMobiliarioMD() {
+
+    reconfiguracionMD.classList.remove('ocultar');
+    reparacionMD.classList.remove('ocultar');
+    mobiliarioRecMD.classList.remove('container__servicio--mobiliario-rec-md-down-s');
+    mobiliarioRecMD.classList.add('container__servicio--mobiliario-rec-md-down');
+    selectMobiliarioRecMD.classList.add('ocultar');
+    cerrarRecMobiliarioMD.classList.add('ocultar');
+
+}
+
+export function regresarReparacionMD() {
+
+    reconfiguracionMD.classList.remove('ocultar');
+    mobiliarioRecMD.classList.remove('ocultar');
+    reparacionMD.classList.remove('container__servicio--rec_int-md-down-s');
+    reparacionMD.classList.add('container__servicio--rec_int-md-down');
+    selectReparacionMD.classList.add('ocultar');
+    cerrarReperacionMD.classList.add('ocultar');
+}
+
 //!Regresar del la seccion de inofrmacion del sub servicio de armado 
 export function regresarArmadoMD(){
     selectArmadoMD.classList.add('ocultar')
@@ -158,6 +206,8 @@ export function regresarDesarmado() {
     desarmado.classList.add('container__servicio--desarmado');
     desarmado.classList.remove('container__servicio--desarmado-s-s');
 }
+
+
 
 //?Mudanza
 //! Regresa de haber sellecionado "Mobiliario" a los sub-servicios de "MUDANZA"
@@ -206,3 +256,4 @@ export function regresarRecInt() {
     recInt.classList.add('container__servicio--reconfiguracion');
     recInt.classList.remove('container__servicio--mobiliario-recInt-s-s');
 }
+

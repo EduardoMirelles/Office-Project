@@ -32,7 +32,15 @@ import { instalacion,
     selectArmadoMD,
     cerrararmadoMD,
     selectDesarmadoMD,
-    cerrarDesarmadoMD
+    cerrarDesarmadoMD,
+    selectMudanzaMobiliarioMD,
+    cerrarMudanzaMobiliarioMD,
+    selectMudanzaComputadorasMD,
+    cerrarMudanzaComputadorasMD,
+    selectMobiliarioRecMD,
+    cerrarRecMobiliarioMD,
+    selectReparacionMD,
+    cerrarReperacionMD
 
 } from '../utils/selectores.js'
 
@@ -90,4 +98,44 @@ export const desarmadoSeleccionadoMDS = function() {
     desarmadoMD.classList.add('container__servicio--desarmado-md-down-s');
     selectDesarmadoMD.classList.remove('ocultar');
     cerrarDesarmadoMD.classList.remove('ocultar');
+}
+
+export const mudanzaMobiliarioSeleccionadoMDS = function() {
+
+    mudanzasMD.classList.add('ocultar');
+    computadorasMD.classList.add('ocultar');
+    mobiliarioMD.classList.remove('container__servicio--mobiliario-md-down');
+    mobiliarioMD.classList.add('container__servicio--mobiliario-md-down-s');
+    selectMudanzaMobiliarioMD.classList.remove('ocultar');
+    cerrarMudanzaMobiliarioMD.classList.remove('ocultar');
+}
+
+export const mudanzaComputadorasSeleccionadoMDS = function() {
+    
+    mudanzasMD.classList.add('ocultar');
+    mobiliarioMD.classList.add('ocultar');
+    computadorasMD.classList.remove('container__servicio--computadoras-md-down');
+    computadorasMD.classList.add('container__servicio--computadoras-md-down-s');
+    selectMudanzaComputadorasMD.classList.remove('ocultar');
+    cerrarMudanzaComputadorasMD.classList.remove('ocultar');
+}
+
+export const recMobiliarioSeleccionadoMDS = function() {
+
+    reconfiguracionMD.classList.add('ocultar');
+    reparacionMD.classList.add('ocultar');
+    mobiliarioRecMD.classList.remove('container__servicio--mobiliario-rec-md-down');
+    mobiliarioRecMD.classList.add('container__servicio--mobiliario-rec-md-down-s');
+    selectMobiliarioRecMD.classList.remove('ocultar');
+    cerrarRecMobiliarioMD.classList.remove('ocultar');
+}
+
+export const reparacionMobiliarioSeleccionadoMDS = function() {
+    
+    reconfiguracionMD.classList.add('ocultar');
+    mobiliarioRecMD.classList.add('ocultar');
+    reparacionMD.classList.remove('container__servicio--rec_int-md-down');
+    reparacionMD.classList.add('container__servicio--rec_int-md-down-s');
+    selectReparacionMD.classList.remove('ocultar');
+    cerrarReperacionMD.classList.remove('ocultar');
 }

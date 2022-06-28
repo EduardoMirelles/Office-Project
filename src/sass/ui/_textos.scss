@@ -90,12 +90,13 @@
 
 .servicio__select--texto {
    
-    @include media-breakpoint-up(lg) {
-        margin-top: 1em;
+    @include media-breakpoint-up(md) {
+        margin-top: 12%;
+        font-size: 0.9em;
     }
 
     @include media-breakpoint-up(xl) {
-        margin-top: 1.5em;
+        margin-top: 20%;
         font-size: 1.3em;
     }
 

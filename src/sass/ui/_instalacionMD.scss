@@ -62,6 +62,7 @@
 
     .container__servicio--armado-md-down-s {
         margin-top: 15%;
+
         @include media-breakpoint-up(md) {
             display: none;
         }
@@ -71,6 +72,10 @@
     }
 
     .container_servicio--armadoMD-s {
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
 
         @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
     }
@@ -102,5 +107,10 @@
     }
    
     .container_servicio--desarmadoMD-s {
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
         @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
     } 

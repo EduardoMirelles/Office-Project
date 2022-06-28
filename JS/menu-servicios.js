@@ -31,7 +31,11 @@ import { instalacion,
          cerrarRecInt,
          selectArmadoMD,
          cerrararmadoMD,
-         cerrarDesarmadoMD
+         cerrarDesarmadoMD,
+         cerrarMudanzaMobiliarioMD,
+         cerrarMudanzaComputadorasMD,
+         cerrarRecMobiliarioMD,
+         cerrarReperacionMD
 
 } from '../JS/utils/selectores.js'
 
@@ -62,7 +66,11 @@ import {
     regresarMobiliarioRec,
     regresarRecInt,
     regresarArmadoMD,
-    regresarDesrmadoMD
+    regresarDesrmadoMD,
+    regresarMudanzaMobiliarioMD,
+    regresarMudanzaComputadorasMD,
+    regresarReconfiguraciónMobiliarioMD,
+    regresarReparacionMD
 
 } from '../JS/utils/funciones_retroceso_menu-serv.js'
 
@@ -71,7 +79,11 @@ import {
     mudanzasSeleccionadoMD,
     reconfiguracionSeleccionadoMD,
     armadoSeleccionadoMDS,
-    desarmadoSeleccionadoMDS
+    desarmadoSeleccionadoMDS,
+    mudanzaMobiliarioSeleccionadoMDS,
+    mudanzaComputadorasSeleccionadoMDS,
+    recMobiliarioSeleccionadoMDS,
+    reparacionMobiliarioSeleccionadoMDS
 } from '../JS/utils/funciones_menu-sev-md.js'
 
 
@@ -98,6 +110,12 @@ function eventListeners() {
     armadoMD.addEventListener('click', desplegarMDS);
     desarmadoMD.addEventListener('click', desplegarMDS);
 
+    mobiliarioMD.addEventListener('click', desplegarMDS);
+    computadorasMD.addEventListener('click', desplegarMDS);
+
+    mobiliarioRecMD.addEventListener('click', desplegarMDS);
+    reparacionMD.addEventListener('click', desplegarMDS);
+
     //Eventos de regresar al estado inicial debajo de MD
     cerrarMD.addEventListener('click', regresarInstalacionMD);
     cerrarMudanzasMD.addEventListener('click', regresarMudanzasMD);
@@ -106,6 +124,12 @@ function eventListeners() {
     //Eventos de regresar al estado inicial de servicio espesifico debajo de MD
     cerrararmadoMD.addEventListener('click', regresarArmadoMD);
     cerrarDesarmadoMD.addEventListener('click', regresarDesrmadoMD);
+
+    cerrarMudanzaMobiliarioMD.addEventListener('click', regresarMudanzaMobiliarioMD);
+    cerrarMudanzaComputadorasMD.addEventListener('click', regresarMudanzaComputadorasMD);
+
+    cerrarRecMobiliarioMD.addEventListener('click', regresarReconfiguraciónMobiliarioMD);
+    cerrarReperacionMD.addEventListener('click', regresarReparacionMD)
 
     //Eventos de despliegue de el servicio especifico seleccionado
     armado.addEventListener('click', desplegarS);
@@ -267,6 +291,38 @@ function desplegarMDS(e) {
 
         if (true) {
             desarmadoSeleccionadoMDS();
+            return;         
+        }
+    }
+
+    if (e.target.classList.contains('select-mobiliario-md') || e.target.classList.contains('container__servicio--mobiliario-md-down')) {
+
+        if (true) {
+            mudanzaMobiliarioSeleccionadoMDS();
+            return;         
+        }
+    }
+
+    if (e.target.classList.contains('select-computadoras-md') || e.target.classList.contains('container__servicio--computadoras-md-down')) {
+
+        if (true) {
+            mudanzaComputadorasSeleccionadoMDS();
+            return;         
+        }
+    }
+
+    if (e.target.classList.contains('select-mobiliario-rec-md') || e.target.classList.contains('container__servicio--mobiliario-rec-md-down')) {
+
+        if (true) {
+            recMobiliarioSeleccionadoMDS();
+            return;         
+        }
+    }
+
+    if (e.target.classList.contains('select-rec_int-md') || e.target.classList.contains('container__servicio--rec_int-md-down')) {
+
+        if (true) {
+            reparacionMobiliarioSeleccionadoMDS();
             return;         
         }
     }

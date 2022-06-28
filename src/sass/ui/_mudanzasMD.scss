@@ -52,6 +52,19 @@
     @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/emp_7.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
 }
 
+.container__servicio--mobiliario-md-down-s {
+
+    margin-top: 15%;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/emp_7.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+}
+
+
+
 .container__servicio--mobiliario-md-down:hover {
     opacity: 75%;
 }
@@ -65,7 +78,36 @@
     @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/emp_22.webp', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0, $mt:false)
 }
 
+.container__servicio--computadoras-md-down-s {
+
+    margin-top: 15%;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/emp_22.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+}
+
 .container__servicio--computadoras-md-down:hover {
     opacity: 75%;
+}
+
+.container_servicio--mudanzaMobiliarioMD-s {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
+}
+
+.container_servicio--mudanzaComputadorasMD-s {
+    
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
 }
 

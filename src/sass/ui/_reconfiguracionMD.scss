@@ -13,7 +13,7 @@
         display: none;
     }
 
-    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_15.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
 }
 
 .container__servicio--reconfiguracion-md-down:hover {
@@ -28,7 +28,7 @@
         display: none;
     }
 
-    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_19.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+    @include mixins.imagenes_menu-servicios-md-down('../../../build/img/fotos_reales/mob_15.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
 }
 
 .container__servicio--mobiliario-rec-md-down {
@@ -37,7 +37,18 @@
         display: none;
     }
 
-    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/rec_11.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/benz_2.webp', $rounded1:0, $rounded2:0, $rounded3:0, $rounded4:0, $mt:false)
+}
+
+.container__servicio--mobiliario-rec-md-down-s {
+
+    margin-top: 15%;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/benz_2.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:025px, $mt:false)
 }
 
 .container__servicio--mobiliario-rec-md-down:hover {
@@ -53,6 +64,35 @@
     @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:0, $rounded2:25px, $rounded3:25px, $rounded4:0, $mt:false)
 }
 
+.container__servicio--rec_int-md-down-s {
+
+    margin-top: 15%;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+    
+    @include mixins.imagenes_menu-servicios-md-down-s('../../../build/img/fotos_reales/des_3.webp', $rounded1:25px, $rounded2:0, $rounded3:0, $rounded4:25px, $mt:false)
+}
+
 .container__servicio--rec_int-md-down:hover {
     opacity: 75%;
+}
+
+.container_servicio--mobiliario-recMD-s {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
+}
+
+.container_servicio--reparacion-recMD-s {
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+    
+    @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
 }

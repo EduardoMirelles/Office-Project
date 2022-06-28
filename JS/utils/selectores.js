@@ -42,6 +42,12 @@ export const reparacionMD = document.querySelector('#rec_int-md-down');
 export const selectArmadoMD = document.querySelector('#select_armadoMD');
 export const selectDesarmadoMD = document.querySelector('#select_desarmadoMD');
 
+export const selectMudanzaMobiliarioMD = document.querySelector('#select_mudanzaMobiliarioMD');
+export const selectMudanzaComputadorasMD = document.querySelector('#select_mudanzaComputadorasMD');
+
+export const selectMobiliarioRecMD = document.querySelector('#select_mobiliario-recMD');
+export const selectReparacionMD = document.querySelector('#select_reparacion-recMD');
+
 //!Cerrar opciones
 export const cerrar = document.querySelector('#cerrar_instalacion');
 export const cerrarMudanzas = document.querySelector('#cerrar_mudanzas');
@@ -65,6 +71,12 @@ export const cerrarReconfiguracionMD = document.querySelector('#cerrar_reconfigu
 //!Cerrar opciones de servicios espesificos debajo de MD
 export const cerrararmadoMD = document.querySelector('#cerrar_armadoMD');
 export const cerrarDesarmadoMD = document.querySelector('#cerrar_desarmadoMD');
+
+export const cerrarMudanzaMobiliarioMD = document.querySelector('#cerrar_mudanza-mobiliarioMD');
+export const cerrarMudanzaComputadorasMD = document.querySelector('#cerrar_mudanza-computadorasMD');
+
+export const cerrarRecMobiliarioMD = document.querySelector('#cerrar_rec-mobiliarioMD');
+export const cerrarReperacionMD = document.querySelector('#cerrar_reparacionMD')
 
 //!Pruebas
 export const camion = document.querySelector('#camion');
