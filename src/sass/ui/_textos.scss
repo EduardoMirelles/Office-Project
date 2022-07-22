@@ -87,7 +87,6 @@
 }
 
 
-
 .servicio__select--texto {
    
     @include media-breakpoint-up(md) {
@@ -101,5 +100,25 @@
     }
 
     color: $white;
+    text-align: center;
+}
+
+//Texto de Nosotros
+
+.nosotros_titulo{
+
+    @include mixins.breakpoints_titulo-nosotros;
+
+    color: #fff;
+    text-align: center;
+    
+    margin-top: 1em;
+}
+
+.nosotros_texto {
+
+    @include mixins.breakpoints_texto-nosotros;
+
+    color: #fff;
     text-align: center;
 }

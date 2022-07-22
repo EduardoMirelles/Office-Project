@@ -80,3 +80,42 @@ export const cerrarReperacionMD = document.querySelector('#cerrar_reparacionMD')
 
 //!Pruebas
 export const camion = document.querySelector('#camion');
+
+// !Nosotros Menu de Servicios
+export const nosotrosServ = document.querySelector('#nuestroServicio');
+export const nosotrosMenuServ = document.querySelector('#nosotros_menuServ');
+export const nosotrosHerramienta = document.querySelector('#nosotrosHerramienta');
+
+//! Clientes Menu de servicios
+export const clientesGaleria = document.querySelector('#clientesGaleria');
+export const otrosClientes = document.querySelector('#otrosClientes');
+
+//! Formulario de Contacto
+export const contactoForm = document.querySelector('#contactoForm');
+export const contactoTitulo = document.querySelector('#contactoTitulo');
+
+//! Botones del menu de servicios
+export const nosotros = document.querySelector('#nosotros');
+export const nosotros2 = document.querySelector('#nosotros2');
+export const nosotros3 = document.querySelector('#nosotros3');
+export const nosotros4 = document.querySelector('#nosotros4');
+export const nosotros5 = document.querySelector('#nosotros5');
+export const nosotros6 = document.querySelector('#nosotros6');
+
+//!Botones de Clientes
+export const clientes = document.querySelector('#clientes');
+export const clientes2 = document.querySelector('#clientes2');
+export const clientes3 = document.querySelector('#clientes3');
+export const clientes4 = document.querySelector('#clientes4');
+export const clientes5 = document.querySelector('#clientes5');
+export const clientes6 = document.querySelector('#clientes6');
+
+//!Botones de Contacto
+export const contacto1 = document.querySelector('#contacto1');
+export const contacto2 = document.querySelector('#contacto2');
+export const contacto3 = document.querySelector('#contacto3');
+export const contacto4 = document.querySelector('#contacto4');
+export const contacto5 = document.querySelector('#contacto5');
+export const contacto6 = document.querySelector('#contacto6');
+
+

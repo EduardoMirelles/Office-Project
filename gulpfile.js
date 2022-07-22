@@ -36,7 +36,7 @@ function versionWebp(done) {
         quality: 50
     };
 
-    src('src/img/**/*.{jpg,jpeg}')
+    src('src/img/**/*.{jpg,jpeg,png}')
     .pipe(webp(opciones))
     .pipe(dest('build/img'))
     done();

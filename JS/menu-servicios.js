@@ -35,7 +35,32 @@ import { instalacion,
          cerrarMudanzaMobiliarioMD,
          cerrarMudanzaComputadorasMD,
          cerrarRecMobiliarioMD,
-         cerrarReperacionMD
+         cerrarReperacionMD,
+         nosotrosServ,
+         nosotros,
+         nosotrosMenuServ,
+         nosotros2,
+         nosotros3,
+         nosotros4, 
+         nosotros5,
+         nosotros6,
+         clientes, 
+         clientesGaleria,
+         clientes2,
+         clientes3,
+         clientes4,
+         clientes5,
+         clientes6,
+         contacto1,
+         contacto2,
+         contacto3,
+         contacto4,
+         contacto5,
+         contacto6,
+         contactoForm,
+         nosotrosHerramienta,
+         contactoTitulo,
+         otrosClientes
 
 } from '../JS/utils/selectores.js'
 
@@ -151,6 +176,29 @@ function eventListeners() {
     cerrarMobiliarioRec.addEventListener('click', regresarMobiliarioRec);
     cerrarRecInt.addEventListener('click', regresarRecInt);
 
+    //Nosotros Menu serv Desplegar
+    nosotros.addEventListener('click', desplegarNosotros);
+    nosotros2.addEventListener('click', desplegarNosotros);
+    nosotros3.addEventListener('click', desplegarNosotros);
+    nosotros4.addEventListener('click', desplegarNosotros);
+    nosotros5.addEventListener('click', desplegarNosotros);
+    nosotros6.addEventListener('click', desplegarNosotros);
+
+    //Clientes
+    clientes.addEventListener('click', desplegarClientes);
+    clientes2.addEventListener('click', desplegarClientes);
+    clientes3.addEventListener('click', desplegarClientes);
+    clientes4.addEventListener('click', desplegarClientes);
+    clientes5.addEventListener('click', desplegarClientes);
+    clientes6.addEventListener('click', desplegarClientes);
+
+    //Contacto
+    contacto1.addEventListener('click', desplegarContacto);
+    contacto2.addEventListener('click', desplegarContacto);
+    contacto3.addEventListener('click', desplegarContacto);
+    contacto4.addEventListener('click', desplegarContacto);
+    contacto5.addEventListener('click', desplegarContacto);
+    contacto6.addEventListener('click', desplegarContacto);
 }
 
 //Funciones
@@ -245,6 +293,57 @@ function desplegarS(e) {
         }
     }
     
+}
+
+//---------Desplegar Nosotros de menu de servicios
+function desplegarNosotros(e) {
+    
+    if (e.target.classList.contains('opciones__servicio--btn')) {
+        
+        if (true) {
+            nosotrosHerramienta.classList.remove('ocultar');
+            nosotrosServ.classList.remove('ocultar');
+            nosotrosMenuServ.classList.remove('ocultar');
+            clientesGaleria.classList.add('ocultar');
+            contactoForm.classList.add('ocultar');
+            contactoTitulo.classList.add('ocultar');
+            otrosClientes.classList.add('ocultar');
+        }
+
+    }
+}
+
+//---------Desplegar Clientes de menu de servicios
+function desplegarClientes(e) {
+
+    if (e.target.classList.contains('opciones__servicio--btn')) {
+        
+        if (true) {
+            otrosClientes.classList.remove('ocultar');
+            clientesGaleria .classList.remove('ocultar');
+            nosotrosServ.classList.add('ocultar');
+            nosotrosMenuServ.classList.add('ocultar');
+            contactoForm.classList.add('ocultar');
+            contactoTitulo.classList.add('ocultar');
+            nosotrosHerramienta.classList.add('ocultar');
+        }
+    }
+}
+
+//---------Desplegar Contacto de Menú de servicios
+function desplegarContacto(e) {
+    if (e.target.classList.contains('opciones__servicio--btn')) {
+        
+        if (true) {
+            contactoTitulo.classList.remove('ocultar');
+            contactoForm.classList.remove('ocultar');
+            clientesGaleria .classList.add('ocultar');
+            nosotrosServ.classList.add('ocultar');
+            nosotrosMenuServ.classList.add('ocultar');
+            nosotrosHerramienta.classList.add('ocultar');
+            otrosClientes.classList.add('ocultar');
+        }
+    }
 }
 
 //!Aplicacion de Dispositivos moviles

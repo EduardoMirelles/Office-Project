@@ -114,3 +114,20 @@
 
         @include mixins.imagenes_menu-servicios-servicio-md-down('$url', $rounded1:0, $rounded2:40px, $rounded3:40px, $rounded4:0);
     } 
+
+    .img_svg-md {
+
+        @include media-breakpoint-down(md) {
+            width: 50%;
+            margin-top: 5%;
+            margin-left: 25%;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 70%;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+
+
+    }

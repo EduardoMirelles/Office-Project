@@ -1,1 +1,5 @@
 node_modules/
+src/
+build/css/app.css/package.jason
+package-lock.jason
+gulpfile.js

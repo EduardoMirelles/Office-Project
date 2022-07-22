@@ -12225,6 +12225,52 @@ body {
   }
 }
 
+.nosotros_titulo {
+  color: #fff;
+  text-align: center;
+  margin-top: 1em;
+}
+@media (min-width: 815px) {
+  .nosotros_titulo {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .nosotros_titulo {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .nosotros_titulo {
+    font-size: 2.5rem;
+  }
+}
+
+.nosotros_texto {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 815px) {
+  .nosotros_texto {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 992px) {
+  .nosotros_texto {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .nosotros_texto {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .nosotros_texto {
+    font-size: 1.2rem;
+  }
+}
+
 .ocultar {
   display: none;
 }
@@ -12274,19 +12320,19 @@ body {
 @media (min-width: 815px) {
   .opciones__servicio--btn {
     margin-top: 0.4rem;
-    width: 6em;
-    height: 4em;
+    width: 6.5em;
+    height: 3em;
     color: #fff;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 }
 @media (min-width: 992px) {
   .opciones__servicio--btn {
     margin-top: 1rem;
-    width: 6em;
+    width: 7em;
     height: 3em;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 @media (min-width: 1200px) {
@@ -12294,7 +12340,17 @@ body {
     margin-top: 1.5rem;
     margin-right: 1rem;
     width: 8em;
-    height: 4em;
+    height: 3em;
+    color: #fff;
+    font-size: 1em;
+  }
+}
+@media (min-width: 1400px) {
+  .opciones__servicio--btn {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    width: 9em;
+    height: 3em;
     color: #fff;
     font-size: 1em;
   }
@@ -12684,6 +12740,21 @@ body {
   }
 }
 
+@media (max-width: 814.98px) {
+  .img_svg-md {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+}
+@media (max-width: 575.98px) {
+  .img_svg-md {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+}
+
 #cerrar_reconfiguracion-md-down {
   margin-left: 80%;
   margin-bottom: 0;
@@ -12858,4 +12929,95 @@ body {
   .container_servicio--reparacion-recMD-s {
     display: none;
   }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  background: rgb(255, 255, 255);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  padding: 2em;
+}
+
+.swiper-slide img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.clientes_principales-img {
+  margin: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1em;
+}
+@media (min-width: 815px) {
+  .clientes_principales-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .clientes_principales-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  .clientes_principales-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1400px) {
+  .clientes_principales-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.footer {
+  background: rgba(27, 27, 27, 0.637);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-start-end-radius: 40px;
+  border-start-start-radius: 40px;
+}
+
+.logo_footer {
+  max-width: 8rem;
+}
+
+.nosotros_menuServ {
+  width: 98.5%;
+  height: 23em;
+  margin: 2rem auto;
+  background-image: linear-gradient(0deg, rgba(12, 0, 255, 0.5270483193) 0%, rgba(181, 45, 253, 0.6222864146) 100%), url("$url");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-start-start-radius: 40px;
+  border-end-start-radius: 40px;
+  border-end-end-radius: 40px;
+  border-start-end-radius: 40px;
+}
+
+.formulario_contacto {
+  width: 98.5%;
+  border-radius: 45px;
+  background-image: linear-gradient(to right top, rgba(5, 25, 55, 0.6), rgba(0, 77, 122, 0.6), rgba(0, 135, 147, 0.6), rgba(0, 191, 114, 0.6), rgba(168, 235, 18, 0.6));
 }
